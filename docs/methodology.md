@@ -37,8 +37,8 @@ $$
 
 其中：
 
-- $\mathcal{L}_{\mathrm{task}}$ 衡量策略模型的真实任务表现；
-- $\mathcal{L}_{\mathrm{reward}}$ 衡量奖励模型对外部评分的拟合能力；
+- $\mathcal{L}_{\mathrm{task}}$ 由外部大模型评分得到的策略模型的真实任务表现；
+- $\mathcal{L}_{\mathrm{reward}}$ 奖励模型的打分和外部大模型打分的接近程度，奖励模型给出的分数与外部大模型评分越接近，损失越小；
 - $\mathcal{L}_{\mathrm{reg}}$ 用于约束奖励尺度和模型复杂度。
 
 ## 3. 外部评价的梯度估计
