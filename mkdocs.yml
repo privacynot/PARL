@@ -1,6 +1,6 @@
 site_name: 面向大语言模型强化学习的奖励模型双层优化研究
 site_description: 论文研究思路、方法设计、实验方案与研究进展
-site_author: 你的姓名
+# site_author: 你的姓名
 
 theme:
   name: material
@@ -9,9 +9,9 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
-    - content.code.copy
-    - search.suggest
-    - search.highlight
+    # - content.code.copy
+    # - search.suggest
+    # - search.highlight
 
 nav:
   - 首页: index.md
@@ -19,8 +19,8 @@ nav:
   - 问题定义: problem-definition.md
   - 方法设计: methodology.md
   - 实验方案: experiments.md
-  - 文献记录: literature.md
-  - 研究进展: progress.md
+  # - 文献记录: literature.md
+  # - 研究进展: progress.md
 
 markdown_extensions:
   - admonition
@@ -31,8 +31,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.details
+  # - pymdownx.highlight
+  # - pymdownx.details
 
 extra_javascript:
   - javascripts/mathjax.js
