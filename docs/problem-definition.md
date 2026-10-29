@@ -53,30 +53,6 @@
 
 其中，\(\alpha\)、\(\beta\) 和 \(\gamma\) 为权重系数。
 
-## 外部离散评价
-
-答案正确率、人工评分和交通仿真指标通常不能直接对生成过程反向传播。定义期望任务得分：
-
-\[
-J_{\mathrm{task}}(\theta)
-=
-\mathbb{E}_{y\sim\pi_\theta(\cdot\mid x)}
-\left[S(x,y)\right]
-\]
-
-其策略梯度可以估计为：
-
-\[
-\nabla_\theta J_{\mathrm{task}}(\theta)
-=
-\mathbb{E}_{y\sim\pi_\theta(\cdot\mid x)}
-\left[
-\left(S(x,y)-b(x)\right)
-\nabla_\theta\log\pi_\theta(y\mid x)
-\right]
-\]
-
-其中 \(b(x)\) 是降低估计方差的基线。外部评分本身不需要可微。
 
 ## 隐式超梯度
 
