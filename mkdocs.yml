@@ -15,7 +15,7 @@ theme:
 
 nav:
   - 首页: index.md
-  - 研究背景: background.md
+  #- 研究背景: background.md
   - 问题定义: problem-definition.md
   - 方法设计: methodology.md
   - 实验方案: experiments.md
